@@ -1,6 +1,6 @@
 # Price Afterimage: Markets Remember What Agents Forget
 
-[![Paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper/)
+[![Paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper/price-afterimage.pdf)
 [![Apart Research](https://img.shields.io/badge/Apart%20Research-AI%20Collusion%20Sprint%202026-1f6feb)](https://apartresearch.com)
 [![Python](https://img.shields.io/badge/python-3.11%2B-3776ab)](pyproject.toml)
 [![License](https://img.shields.io/badge/code-MIT-green)](LICENSE)
