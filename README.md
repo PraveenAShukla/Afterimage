@@ -11,9 +11,10 @@ Plant 20 rounds of price history in front of two LLM pricing agents, let those r
 window, and the market still prices as if it remembers them 80+ rounds later. The memory is not in the agent. It is in
 the loop between the two agents' prices.
 
-<p align="center"><img src="results/afterimage/fig1_afterimage_curve.png" width="820" alt="Afterimage A over rounds: Qwen3-14B keeps most of the planted price gap long after the planted rows leave the prompt window; other models keep less"></p>
-<p align="center"><em>Share of the planted price gap still in the price, by round. Qwen3-14B (blue) keeps most of it after the
-planted rows leave the prompt window (dashed line). Higher = more of the plant kept.</em></p>
+<p align="center"><img src="paper/figures/price-afterimage-hero.png" width="860" alt="Each trail of light is one real Qwen3-14B game. Left: two Qwen3-14B agents, planted at three price levels, still price apart long after no prompt shows the plant. Right: with one rival replaced by a best responder, every plant fades to the Nash price."></p>
+<p align="center"><em>Each trail of light is one real Qwen3-14B game, coloured by its planted price. Left: two Qwen3-14B agents
+still price apart long after no prompt shows the planted rows (A = 0.84, 72 games). Right: with one rival replaced by a
+best responder from round 21, every plant fades to Nash (A = 0.001, 36 games).</em></p>
 
 ## Findings
 
@@ -25,7 +26,8 @@ planted rows leave the prompt window (dashed line). Higher = more of the plant k
 | **Fix** | A one-line best-response hint removes it by moving prices to Nash | **0.000** vs **0.861** for a matched sham |
 
 **Scope.** One logit duopoly and Lee's 4-firm market, one prompt and one setting per model, plants inside a price band.
-No conduct test was run. Limits are in the paper's Section 9 and Appendix A.
+A forced-deviation test found no immediate punishment, so we read the afterimage as imitation, not shown
+coordination. Limits are in the paper's Section 9 and Appendix A.
 
 ## Quickstart
 
