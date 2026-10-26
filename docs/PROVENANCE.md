@@ -6,7 +6,7 @@ paper's main text, except the S1 sanity runs and the discovery batch, ran during
 | Before the sprint | During the sprint |
 |---|---|
 | Idea, literature scan, prompts, planning | Duopoly confirmation runs (phase `conf`: Qwen3-14B, Qwen2.5-14B, gpt-oss-20b, OLMo-2-13B), including the Claude Sonnet 5.5 appendix |
-| All code in this repository: market, agents, game loop, backends, validator, Lee harness, analyses, tests | K2-Horizon runs |
+| Most code in this repository: market, agents, game loop, backends, validator, Lee harness, analyses, tests | K2-Horizon runs |
 | Designs, pre-registrations and seeds for S1, the duopoly (H1-H3), the mechanism tests and the supervision studies | Mechanism runs (STEP / IMP) |
 | S1 sanity runs (scripted controls, arm S slope check, one-step drift maps) | Supervision and pressure runs |
 | Discovery batch (phase `disc`) and the CPU checks on those logs | Lee (2026) replication and challenge |

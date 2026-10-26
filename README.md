@@ -67,7 +67,7 @@ serve/, slurm/   vLLM and cluster launchers for re-running
 
 ## Built before and during the sprint
 
-**Pre-existing (written before the sprint):** all code in this repository (`src/`, `analysis/`, `scripts/`, `tests/`,
+**Pre-existing (written before the sprint):** most code in this repository (`src/`, `analysis/`, `scripts/`, `tests/`,
 `serve/`, `slurm/`), the designs, pre-registrations and seeds, the S1 sanity runs and the discovery batch.
 
 **New during the sprint (23-25 October 2026):** every other model run and every result in the paper: the duopoly
