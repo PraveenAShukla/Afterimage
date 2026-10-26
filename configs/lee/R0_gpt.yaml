@@ -1,0 +1,25 @@
+stage: lee
+phase: rep
+cell: homog-gpt
+seeds:
+- 712219
+- 719017
+- 726295
+- 731633
+- 733330
+- 736387
+- 746904
+- 750069
+- 752732
+- 790800
+firm:
+  provider: openai
+  model: gpt-5-nano
+  extra:
+    reasoning_effort: minimal
+    max_completion_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

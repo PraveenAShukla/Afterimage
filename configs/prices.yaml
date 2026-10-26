@@ -1,0 +1,25 @@
+# USD per 1M tokens. A paid model missing here is REFUSED by the budget guard.
+# Source: Anthropic Claude API reference (model and price table). Re-check before running.
+claude-opus-5-5:   {input_per_mtok: 4.00, output_per_mtok: 20.00, verified: " (Anthropic API reference)"}
+claude-sonnet-5-5: {input_per_mtok: 2.00, output_per_mtok: 10.00, verified: " (Anthropic API reference)"}
+claude-haiku-5-5:  {input_per_mtok: 0.10, output_per_mtok: 0.50, verified: " (Anthropic API reference), <=100K-token prompts"}
+# OpenAI: read from the official page https://developers.openai.com/api/docs/pricing (Standard tier, short context)
+# in the browser on. Cached input / cache writes are priced separately on that page (not used: we treat all
+# input as uncached, which over-estimates cost slightly).
+gpt-6-luna:  {input_per_mtok: 0.10, output_per_mtok: 0.50, verified: " official pricing page"}
+gpt-6.1-sol: {input_per_mtok: 2.00, output_per_mtok: 10.00, verified: " official pricing page"}
+gpt-6-astra: {input_per_mtok: 10.00, output_per_mtok: 50.00, verified: " official pricing page"}
+gpt-5.6-sol: {input_per_mtok: 4.00, output_per_mtok: 20.00, verified: " official pricing page (promo, through >= 2026-11-21)"}
+# Older Claude models that still accept sampling params (Anthropic API reference model table)
+claude-sonnet-4-6: {input_per_mtok: 3.00, output_per_mtok: 15.00, verified: " (Anthropic API reference)"}
+claude-haiku-4-5:  {input_per_mtok: 1.00, output_per_mtok: 5.00, verified: " platform.claude.com pricing (rechecked)"}
+claude-opus-4-6:   {input_per_mtok: 5.00, output_per_mtok: 25.00, verified: " (Anthropic API reference)"}
+gpt-5.6-luna: {input_per_mtok: 0.20, output_per_mtok: 1.20, verified: " official model page (developers.openai.com/api/docs/models/gpt-5.6-luna)"}
+# Lee 2610.11256 replication models: prices from Lee's Table 2, UNVERIFIED. Check each provider page before any paid run.
+gpt-5-nano:            {input_per_mtok: 0.05, output_per_mtok: 0.40, verified: " developers.openai.com/api/docs/pricing"}
+gemini-3.1-flash-lite: {input_per_mtok: 0.25, output_per_mtok: 1.50, verified: " ai.google.dev pricing (paid tier; thinking billed as output)"}
+deepseek-flash:        {input_per_mtok: 0.30, output_per_mtok: 1.20, verified: " api-docs.deepseek.com pricing (peak rate; off-peak is half)"}
+# IFM K2: no published price seen; the key is IFM-issued. 0 here means "unknown", not "free". Confirm with IFM.
+IFM/K2-Horizon-375B-A23B: {input_per_mtok: 0.0, output_per_mtok: 0.0, verified: "UNVERIFIED (no price published;)"}
+qwen3.5-flash:         {input_per_mtok: 0.10, output_per_mtok: 0.40, verified: " alibabacloud.com model-studio pricing (intl, Singapore)"}
+qwen/qwen3.5-flash-02-23: {input_per_mtok: 0.065, output_per_mtok: 0.26, verified: " openrouter.ai/api/v1/models (OpenRouter route for qwen3.5-flash 2026-02-23)"}

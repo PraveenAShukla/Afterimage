@@ -1,0 +1,48 @@
+stage: lee
+phase: conf
+cell: homog-qwen
+seeds:
+- 710279
+- 728638
+- 744088
+- 753063
+- 753957
+- 764381
+- 770804
+- 784339
+- 784647
+- 792029
+opening:
+  x: 1.69
+  source_template: lee_rep_homog-qwen_s{seed}
+  pool:
+  - 700872
+  - 717779
+  - 722500
+  - 728853
+  - 752271
+  - 765647
+  - 767974
+  - 784835
+  - 789897
+  - 793490
+  perm_seed: 4301
+  window:
+  - 31
+  - 50
+firm:
+  provider: openrouter
+  model: qwen/qwen3.5-flash-02-23
+  extra:
+    reasoning:
+      enabled: false
+    max_tokens: 600
+    provider:
+      order:
+      - alibaba
+      allow_fallbacks: false
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

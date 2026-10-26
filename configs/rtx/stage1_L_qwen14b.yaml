@@ -1,0 +1,29 @@
+prompt: E1
+rounds: 300
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+est_output_tokens: 1200
+parallel_games: 10
+notes: RTX 5000 Ada, 4-bit AWQ (design author's instruction); weights pinned
+  by revision at serve time
+stage: stage1
+arm: L
+seeds:
+- 101
+- 102
+- 103
+- 104
+- 105
+- 106
+- 107
+- 108
+- 109
+- 110
+firm1:
+  provider: vllm
+  model: Qwen/Qwen2.5-14B-Instruct-AWQ
+firm2:
+  provider: vllm
+  model: Qwen/Qwen2.5-14B-Instruct-AWQ

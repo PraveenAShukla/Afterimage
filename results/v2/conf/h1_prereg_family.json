@@ -1,0 +1,46 @@
+{
+ "v2O-gptoss": {
+  "H1_frozen_code": "inconclusive",
+  "H1_prereg_family": "inconclusive",
+  "beta_band": 0.3430229166666669,
+  "ci90": [
+   0.22971520833333334,
+   0.46260927083333353
+  ],
+  "holm_p_gt_prereg": 1.0,
+  "holm_p_lt_prereg": 0.052199999999999996
+ },
+ "v2O-olmo2": {
+  "H1_frozen_code": "not inherited",
+  "H1_prereg_family": "not inherited",
+  "beta_band": -0.11802812499999998,
+  "ci90": [
+   -0.21503869791666655,
+   -0.03236239583333312
+  ],
+  "holm_p_gt_prereg": 1.0,
+  "holm_p_lt_prereg": 0.0
+ },
+ "v2O-qwen25": {
+  "H1_frozen_code": "inconclusive",
+  "H1_prereg_family": "inconclusive",
+  "beta_band": 0.5566145833333332,
+  "ci90": [
+   0.4211623437500001,
+   0.6799204166666666
+  ],
+  "holm_p_gt_prereg": 0.6701999999999999,
+  "holm_p_lt_prereg": 1.0
+ },
+ "v2O-qwen3off": {
+  "H1_frozen_code": "inherited",
+  "H1_prereg_family": "inherited",
+  "beta_band": 0.8369718750000005,
+  "ci90": [
+   0.7777428645833336,
+   0.890095729166667
+  ],
+  "holm_p_gt_prereg": 0.0,
+  "holm_p_lt_prereg": 1.0
+ }
+}

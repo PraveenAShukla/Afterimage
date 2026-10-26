@@ -1,0 +1,16 @@
+E5 full A_late         0.786 [0.622, 0.905]
+E5 D_PO                -0.058 [-0.451, +0.254]
+E1 BR A1_late          0.001 [-0.002, 0.003]
+E1 COPY A1_late        0.839 [0.766, 0.910]
+E1 D_BR                -0.807 [-0.869, -0.743]
+E1b A1_late            0.002 [-0.006, 0.011]
+E4 haiku55 A_late      -0.006 [-0.041, 0.035]
+E4 sonnet55 A_late     0.414 [0.230, 0.597]
+E4 gpt61sol A_late     0.006 [-0.200, 0.201]
+D2 D_hint              -0.861 [-0.912, -0.810]
+e1 labels: {'E1_BR': 'loop-carried', 'E1_BR_share_of_self': 0.0006397842619950474, 'E1_COPY': 'preserved', 'E1_holm_121_170': {'D_BR': 0.0, 'D_COPY': 0.4348}}
+e1b labels: {'E1b': 'none'}
+e4 labels: {'E4_holm_relays': {'ait-e4-gpt61sol': 1.0, 'ait-e4-haiku55': 1.0, 'ait-e4-sonnet55': 1.0}, 'ait-e4-gpt61sol': 'unresolved', 'ait-e4-haiku55': 'unresolved', 'ait-e4-sonnet55': 'unresolved'}
+e5 labels: {'D_PO': 'unresolved', 'E5_confirmed': True, 'E5_inputs': {'A_121_170': [0.7863031250000003, 0.6222229687499998, 0.9046952343750005], 'A_41_60': [0.9684257812500005, 0.9363812500000003, 0.9950289062500005], 'PI_121_170': [0.75, 0.93], 'PI_41_60': [0.92, 1.0]}}
+d2 labels: {'D2_WORKS': True, 'D2_inputs': {'A_hint_121_170': [1.0271626370065263e-31, 1.0271626370065263e-31, 1.0271626370065263e-31], 'D_hint_ci90': [-0.911698177083334, -0.8101098958333333], 'fn_gap_q1.473': 4.251235581986812e-05}}
+e2b labels: {'E2b': 'reasoning shortens', 'E2b_amend_8k': 'reasoning shortens'}

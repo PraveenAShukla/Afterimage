@@ -1,0 +1,19 @@
+name: sonnet55
+firm:
+  provider: anthropic
+  model: claude-sonnet-5-5
+  effort: low
+  thinking: adaptive
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+battery: headline
+est_output_tokens: 1100
+approve_usd: 58
+seed_master: 55501
+parallel_games: 5
+n:
+  stage1: 10
+  stage2: 10
+  stage3: 10

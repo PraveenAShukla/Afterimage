@@ -1,0 +1,42 @@
+stage: lee
+phase: conf
+cell: homog-claude
+seeds:
+- 718677
+- 729890
+- 737366
+- 739483
+- 746294
+- 750868
+- 772344
+- 777643
+- 783539
+- 796132
+opening:
+  x: 1.69
+  source_template: lee_rep_homog-claude_s{seed}
+  pool:
+  - 701479
+  - 709124
+  - 720892
+  - 721047
+  - 722043
+  - 725512
+  - 733764
+  - 740692
+  - 751548
+  - 788814
+  perm_seed: 4301
+  window:
+  - 31
+  - 50
+firm:
+  provider: anthropic
+  model: claude-haiku-4-5
+  extra:
+    max_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

@@ -1,0 +1,21 @@
+stage: v2Q-olmo2
+arm: Q
+phase: conf
+prompt: E1
+rounds: 100
+fixed_price: 1.925
+seeds:
+- 930252
+- 931629
+- 933380
+- 934223
+- 936330
+- 938178
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 6
+firm1:
+  provider: vllm
+  model: allenai/OLMo-2-1124-13B-Instruct

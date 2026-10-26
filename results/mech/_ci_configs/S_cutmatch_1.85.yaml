@@ -1,0 +1,50 @@
+arm: S
+firm1: &id001
+  model: mci-cutmatch
+  provider: mock
+  strategy: cutmatch~0.005
+firm2: *id001
+opening:
+- 1.85
+- 1.85
+opening_source:
+  cross_model: true
+  perm_seed: 230101
+  pool:
+  - 336432
+  - 253674
+  - 867157
+  - 163673
+  - 630375
+  - 536445
+  - 29284
+  - 499513
+  - 929615
+  - 258380
+  - 821813
+  - 901192
+  - 469751
+  - 650927
+  - 784775
+  - 127768
+  - 344079
+  - 947649
+  - 851381
+  - 831347
+  template: s3-qwen3_14b_off_L_E1_Qwen3-14B-AWQ_s{seed}
+parallel_games: 6
+prompt: E1
+rounds: 300
+sampling:
+  max_tokens: 2048
+  temperature: 0.7
+  top_p: 1.0
+seeds:
+- 99101
+- 99102
+- 99103
+- 99104
+- 99105
+- 99106
+stage: mci-cutmatch
+window: 100

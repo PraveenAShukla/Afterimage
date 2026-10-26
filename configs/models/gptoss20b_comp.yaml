@@ -1,0 +1,22 @@
+name: gptoss20b_comp
+firm:
+  provider: vllm
+  model: openai/gpt-oss-20b
+  extra_body:
+    reasoning_effort: low
+revision:
+server_args: ''
+maxlen: 8192
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 4096
+battery: competence
+seed_master: 20001
+parallel_games: 10
+n:
+  stage1: 10
+  stage2: 10
+  stage3: 20
+notes: "DIAGNOSTIC competence check (Stage 2 FN/FM) after the failed S1 gate (\u0394\
+  \ -1.28, prices ~1.0-1.24)"

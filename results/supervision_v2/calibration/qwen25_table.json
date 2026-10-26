@@ -1,0 +1,30 @@
+{
+ "individual|1.55": {
+  "concern_share": 0.5194444444444445,
+  "failures": 0,
+  "in_range": true,
+  "n_calls": 720,
+  "valid": 720
+ },
+ "individual|1.95": {
+  "concern_share": 0.39305555555555555,
+  "failures": 0,
+  "in_range": true,
+  "n_calls": 720,
+  "valid": 720
+ },
+ "shared|1.55": {
+  "concern_share": 0.5777777777777777,
+  "failures": 0,
+  "in_range": true,
+  "n_calls": 360,
+  "valid": 360
+ },
+ "shared|1.95": {
+  "concern_share": 0.4638888888888889,
+  "failures": 0,
+  "in_range": true,
+  "n_calls": 360,
+  "valid": 360
+ }
+}

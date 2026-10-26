@@ -1,0 +1,29 @@
+stage: v2Qanchor-qwen25
+arm: Q
+phase: conf
+prompt: E1
+rounds: 100
+fixed_price: 1.473
+view:
+  anchor: 2.1
+seeds:
+- 930446
+- 931612
+- 932115
+- 932690
+- 933077
+- 934507
+- 935349
+- 936735
+- 937879
+- 938293
+- 938675
+- 939806
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1:
+  provider: vllm
+  model: Qwen/Qwen2.5-14B-Instruct-AWQ

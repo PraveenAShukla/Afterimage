@@ -1,0 +1,19 @@
+name: haiku55
+firm:
+  provider: anthropic
+  model: claude-haiku-5-5
+  effort: low
+  thinking: adaptive
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+battery: full
+est_output_tokens: 1100
+approve_usd: 22
+seed_master: 55001
+parallel_games: 10
+n:
+  stage1: 10
+  stage2: 10
+  stage3: 20

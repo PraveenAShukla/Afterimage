@@ -1,0 +1,43 @@
+stage: lee
+phase: conf
+cell: homog-gpt
+seeds:
+- 707260
+- 717138
+- 723349
+- 736176
+- 745989
+- 746167
+- 746281
+- 757763
+- 768647
+- 798139
+opening:
+  x: 1.69
+  source_template: lee_rep_homog-gpt_s{seed}
+  pool:
+  - 712219
+  - 719017
+  - 726295
+  - 731633
+  - 733330
+  - 736387
+  - 746904
+  - 750069
+  - 752732
+  - 790800
+  perm_seed: 4301
+  window:
+  - 31
+  - 50
+firm:
+  provider: openai
+  model: gpt-5-nano
+  extra:
+    reasoning_effort: minimal
+    max_completion_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

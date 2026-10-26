@@ -1,0 +1,40 @@
+stage: s1S-gptoss
+arm: S
+prompt: E1
+rounds: 300
+window: 100
+opening:
+- 1.7
+- 1.7
+opening_source:
+  template: s1-gptoss20b_L_E1_gpt-oss-20b_s{seed}
+  pool:
+  - 20002
+  - 20003
+  - 20004
+  - 20005
+  - 20006
+  - 20007
+  - 20008
+  - 20009
+  - 20010
+  - 20011
+  perm_seed: 230101
+seeds:
+- 83001
+- 83002
+- 83003
+- 83004
+- 83005
+- 83006
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 4096
+parallel_games: 6
+firm1: &id001
+  provider: vllm
+  model: openai/gpt-oss-20b
+  extra_body:
+    reasoning_effort: low
+firm2: *id001

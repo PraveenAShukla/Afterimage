@@ -1,0 +1,33 @@
+[project]
+name = "collusion"
+version = "0.1.0"
+description = "Causal tests of tacit collusion between LLM pricing agents"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "matplotlib>=3.8",
+    "adjustText>=1.3",
+]
+
+[project.optional-dependencies]
+api = ["anthropic>=1.0"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/collusion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 130
+[tool.ruff.lint]
+select = ["F", "B", "E9", "PLE"]   # pyflakes, bugbear, syntax errors, pylint errors: bug-finders, not style

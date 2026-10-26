@@ -1,0 +1,182 @@
+[
+ {
+  "A_early": 0.9608229166666674,
+  "A_late": 0.8369718750000006,
+  "A_late_ci90_within": [
+   0.7774623958333341,
+   0.8880204166666671
+  ],
+  "card": "qwen3-14b-off",
+  "cold_start_mean": 1.8015658333333333,
+  "decoding": "Qwen3-14B-AWQ, thinking off, T 0.7",
+  "label": "relays",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.9684257812500005,
+  "A_late": 0.7863031250000003,
+  "A_late_ci90_within": [
+   0.6222229687499998,
+   0.9046952343750005
+  ],
+  "card": "qwen3-14b-off-E5",
+  "cold_start_mean": 1.8015658333333333,
+  "decoding": "Qwen3-14B-AWQ, thinking off, T 0.7 (E5 fresh seeds)",
+  "label": "relays",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.9485885416666675,
+  "A_late": 0.5566145833333334,
+  "A_late_ci90_within": [
+   0.42190072916666665,
+   0.6811994791666667
+  ],
+  "card": "qwen2.5-14b",
+  "cold_start_mean": 1.8694125,
+  "decoding": "Qwen2.5-14B-Instruct-AWQ, T 0.7",
+  "label": "unresolved",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.78246875,
+  "A_late": 0.3430229166666669,
+  "A_late_ci90_within": [
+   0.2298618750000002,
+   0.4633992708333332
+  ],
+  "card": "gpt-oss-20b",
+  "cold_start_mean": 1.1532449999999999,
+  "decoding": "gpt-oss-20b, reasoning effort low, T 0.7",
+  "label": "lets go (partly)",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": -0.12832291666666668,
+  "A_late": -0.11802812499999998,
+  "A_late_ci90_within": [
+   -0.21372479166666666,
+   -0.03203473958333346
+  ],
+  "card": "olmo-2-13b",
+  "cold_start_mean": 1.0220679166666666,
+  "decoding": "OLMo-2-1124-13B-Instruct, T 0.7",
+  "label": "degenerate (NOT SCORED)",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.27027604166666674,
+  "A_late": 0.014936458333333536,
+  "A_late_ci90_within": [
+   -0.005287656249999436,
+   0.03768255208333333
+  ],
+  "card": "k2",
+  "cold_start_mean": null,
+  "decoding": "IFM K2 (375B reasoning), reasoning effort low (extra model)",
+  "label": "degenerate (NOT SCORED)",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.6390625000000006,
+  "A_late": 0.36556250000000023,
+  "A_late_ci90_within": [
+   0.09249999999999982,
+   0.6226250000000007
+  ],
+  "card": "sonnet-5.5-old",
+  "cold_start_mean": null,
+  "decoding": "Claude Sonnet 5.5, T 1.0, effort low, adaptive thinking (n 4 per level)",
+  "label": "degenerate (NOT SCORED)",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.19270833333333318,
+  "A_late": -0.006300000000000245,
+  "A_late_ci90_within": [
+   -0.04144010416666692,
+   0.03520739583333291
+  ],
+  "card": "haiku-5.5",
+  "cold_start_mean": 1.4823241666666667,
+  "decoding": "Claude Haiku 5.5, T 1.0, effort low, adaptive thinking",
+  "label": "unresolved",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.6227499999999996,
+  "A_late": 0.41439583333333346,
+  "A_late_ci90_within": [
+   0.2297541666666666,
+   0.5965479166666668
+  ],
+  "card": "sonnet-5.5",
+  "cold_start_mean": 1.711741666666667,
+  "decoding": "Claude Sonnet 5.5, T 1.0, effort low, adaptive thinking",
+  "label": "unresolved",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.07567187499999996,
+  "A_late": 0.0056541666666662825,
+  "A_late_ci90_within": [
+   -0.19966375000000033,
+   0.20126010416666582
+  ],
+  "card": "gpt-6.1-sol",
+  "cold_start_mean": 1.5340958333333334,
+  "decoding": "GPT-6.1-sol, reasoning effort low, T 1.0",
+  "label": "unresolved",
+  "market": "duopoly (ours)"
+ },
+ {
+  "A_early": 0.9031423611111112,
+  "A_late": 0.8572453703703705,
+  "A_late_ci90_within": null,
+  "card": "lee-claude",
+  "cold_start_mean": null,
+  "decoding": "Lee's 4-firm market (E8)",
+  "label": "second market (E8; windows 41-60 / 121-150)",
+  "market": "Lee 4-firm"
+ },
+ {
+  "A_early": 0.7148958333333334,
+  "A_late": 0.23744212962962954,
+  "A_late_ci90_within": null,
+  "card": "lee-deepseek",
+  "cold_start_mean": null,
+  "decoding": "Lee's 4-firm market (E8)",
+  "label": "second market (E8; windows 41-60 / 121-150)",
+  "market": "Lee 4-firm"
+ },
+ {
+  "A_early": 0.02109375000000013,
+  "A_late": 0.023784722222222183,
+  "A_late_ci90_within": null,
+  "card": "lee-gemini",
+  "cold_start_mean": null,
+  "decoding": "Lee's 4-firm market (E8)",
+  "label": "second market (E8; windows 41-60 / 121-150)",
+  "market": "Lee 4-firm"
+ },
+ {
+  "A_early": 0.6295833333333335,
+  "A_late": 0.8812962962962966,
+  "A_late_ci90_within": null,
+  "card": "lee-gpt",
+  "cold_start_mean": null,
+  "decoding": "Lee's 4-firm market (E8)",
+  "label": "second market (E8; windows 41-60 / 121-150)",
+  "market": "Lee 4-firm"
+ },
+ {
+  "A_early": 0.9403819444444445,
+  "A_late": 0.9402777777777778,
+  "A_late_ci90_within": null,
+  "card": "lee-qwen",
+  "cold_start_mean": null,
+  "decoding": "Lee's 4-firm market (E8)",
+  "label": "second market (E8; windows 41-60 / 121-150)",
+  "market": "Lee 4-firm"
+ }
+]

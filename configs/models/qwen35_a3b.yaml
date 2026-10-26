@@ -1,0 +1,25 @@
+# Qwen3.5-35B-A3B (MoE, 3B active), official GPTQ-Int4, thinking OFF (matches qwen3_14b_off).
+# Needs vLLM >= 0.17 (qwen3_5_moe architecture): run with VENV_OVERRIDE=$HOME/envs/collusion-q35.
+# Text-only: vision inputs disabled so the encoder does not reserve memory. Added by the team
+# (replaces Qwen2.5 in G2); its self-play battery is the reference for the cross-model pair.
+name: qwen35_a3b
+firm:
+  provider: vllm
+  model: Qwen/Qwen3.5-35B-A3B-GPTQ-Int4
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+revision:
+server_args: --limit-mm-per-prompt {"image":0,"video":0} --gpu-memory-utilization 0.85 --max-num-seqs 32
+maxlen: 4096
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+battery: full
+seed_master: 35301
+parallel_games: 10
+n:
+  stage1: 10
+  stage2: 10
+  stage3: 20

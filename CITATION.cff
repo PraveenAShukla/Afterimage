@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or results, please cite the report."
+title: "Price Afterimage: Markets Remember What Agents Forget"
+authors:
+  - family-names: Shukla
+    given-names: Praveen
+  - family-names: Thomas
+    given-names: Noel
+year: 2026
+type: software
+license: MIT

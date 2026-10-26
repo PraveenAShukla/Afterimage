@@ -1,0 +1,44 @@
+stage: lee
+phase: conf
+cell: homog-deepseek
+seeds:
+- 714152
+- 719321
+- 747225
+- 748220
+- 752141
+- 767248
+- 774167
+- 778881
+- 790712
+- 792605
+opening:
+  x: 1.33
+  source_template: lee_rep_homog-deepseek_s{seed}
+  pool:
+  - 704644
+  - 717717
+  - 721423
+  - 726173
+  - 737925
+  - 747387
+  - 748478
+  - 760435
+  - 776848
+  - 784115
+  perm_seed: 4301
+  window:
+  - 31
+  - 50
+firm:
+  provider: deepseek
+  model: deepseek-flash
+  extra:
+    thinking:
+      type: disabled
+    max_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

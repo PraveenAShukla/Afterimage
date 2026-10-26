@@ -1,0 +1,17 @@
+{
+ "benchmarks": {
+  "pM": 1.924980919957175,
+  "pN": 1.4729266600311348,
+  "param_a": 2.0,
+  "param_a0": 0.0,
+  "param_c": 1.0,
+  "param_mu": 0.25,
+  "piM": 0.3374904595088809,
+  "piN": 0.22292666003083797
+ },
+ "groups": {
+  "X|s3x-haiku55-gpt6luna|E1|claude-haiku-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 20
+ },
+ "incomplete_runs": [],
+ "n_runs": 20
+}

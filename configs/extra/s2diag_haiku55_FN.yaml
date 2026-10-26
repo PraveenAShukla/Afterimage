@@ -1,0 +1,28 @@
+stage: s2diag-haiku55
+arm: FN
+prompt: E1
+rounds: 300
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 10
+notes: "DIAGNOSTIC: Stage 2 despite failed Stage 1 gate (\u0394=0.09): competence\
+  \ check to interpret non-collusion"
+est_output_tokens: 1100
+firm1:
+  provider: anthropic
+  model: claude-haiku-5-5
+  effort: low
+  thinking: adaptive
+seeds:
+- 55501
+- 55502
+- 55503
+- 55504
+- 55505
+- 55506
+- 55507
+- 55508
+- 55509
+- 55510

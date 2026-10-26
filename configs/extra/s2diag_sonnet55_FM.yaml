@@ -1,0 +1,24 @@
+stage: s2diag-sonnet55
+arm: FM
+prompt: E1
+rounds: 100
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 5
+notes: "DIAGNOSTIC (A2 for the strategist): rival fixed at p^M = 1.925; a best-responder goes to BR = 1.662, a
+  follower toward 1.925. 5 games x 100 rounds to save money; other models' FM runs used 300
+  rounds, and A2 reads the last 50, so this is a shorter-run comparison (disclosed)."
+est_output_tokens: 1100
+firm1:
+  provider: anthropic
+  model: claude-sonnet-5-5
+  effort: low
+  thinking: adaptive
+seeds:
+- 55601
+- 55602
+- 55603
+- 55604
+- 55605

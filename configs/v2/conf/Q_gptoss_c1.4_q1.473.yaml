@@ -1,0 +1,25 @@
+stage: v2Qc-gptoss
+arm: Q
+phase: conf
+prompt: E1
+rounds: 100
+fixed_price: 1.473
+market:
+  c: 1.4
+seeds:
+- 930169
+- 930628
+- 931062
+- 933587
+- 936284
+- 939936
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 4096
+parallel_games: 6
+firm1:
+  provider: vllm
+  model: openai/gpt-oss-20b
+  extra_body:
+    reasoning_effort: low

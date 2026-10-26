@@ -1,0 +1,43 @@
+stage: lee
+phase: conf
+cell: homog-gemini
+seeds:
+- 708956
+- 709376
+- 712832
+- 718856
+- 735016
+- 747526
+- 754146
+- 756821
+- 762886
+- 775650
+opening:
+  x: 2.05
+  source_template: lee_rep_homog-gemini_s{seed}
+  pool:
+  - 707779
+  - 719658
+  - 721031
+  - 732477
+  - 742141
+  - 747711
+  - 753541
+  - 763110
+  - 765919
+  - 769389
+  perm_seed: 4301
+  window:
+  - 31
+  - 50
+firm:
+  provider: google
+  model: gemini-3.1-flash-lite
+  extra:
+    reasoning_effort: minimal
+    max_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

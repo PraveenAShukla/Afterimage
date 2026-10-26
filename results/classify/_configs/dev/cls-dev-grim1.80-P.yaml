@@ -1,0 +1,22 @@
+arm: P
+firm1:
+  model: ctl-grim1.80
+  provider: mock
+  strategy: grim:1.80
+parallel_games: 3
+prompt: E1
+replay_map:
+  '1501': 501
+  '1502': 502
+  '1503': 503
+rounds: 300
+sampling:
+  max_tokens: 2048
+  temperature: 0.7
+  top_p: 1.0
+seeds:
+- 1501
+- 1502
+- 1503
+source_run_template: cls-dev-grim1.80_L_E1_ctl-grim180_s{seed}
+stage: cls-dev-grim1.80

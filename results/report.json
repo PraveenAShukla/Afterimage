@@ -1,0 +1,246 @@
+{
+ "benchmarks": {
+  "pM": 1.924980919957175,
+  "pN": 1.4729266600311348,
+  "param_a": 2.0,
+  "param_a0": 0.0,
+  "param_c": 1.0,
+  "param_mu": 0.25,
+  "piM": 0.3374904595088809,
+  "piN": 0.22292666003083797
+ },
+ "groups": {
+  "Dfrozen|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "Dfrozen|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "Dplacebo|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "Dplacebo|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "D|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "D|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "FM|s2diag-gpt6luna|E1|gpt-6-luna|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "FM|s2diag-haiku55|E1|claude-haiku-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "FN|s2diag-gpt6luna|E1|gpt-6-luna|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "FN|s2diag-haiku55|E1|claude-haiku-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "L|pilot|E1|claude-haiku-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 1,
+  "L|pilot|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 1,
+  "L|pilot|E1|gpt-6-luna|id:none|T1.0|p1.0|max2048|mkt:{}": 1,
+  "L|pilot|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 1,
+  "L|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "L|s1-gpt6luna|E1|gpt-6-luna|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "L|s1-haiku55|E1|claude-haiku-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "L|s1-sonnet55_confirm|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 5,
+  "L|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "P|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "P|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "X|s3x-haiku55-gpt6luna|E1|claude-haiku-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 20
+ },
+ "incomplete_runs": [
+  "s1-sonnet55_confirm_L_E1_claude-sonnet-5-5_s107455",
+  "s1-sonnet55_confirm_L_E1_claude-sonnet-5-5_s217062",
+  "s1-sonnet55_confirm_L_E1_claude-sonnet-5-5_s778882"
+ ],
+ "interaction|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "I": -0.04660910631259524,
+  "ci95": [
+   -0.3258094140373869,
+   0.2195291752415524
+  ],
+  "n_L": 10,
+  "n_P": 10,
+  "p_two_sided": 0.7629237076292371,
+  "ratio_P_over_L": 1.1527131601073985
+ },
+ "interaction|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "I": -0.16429159703636853,
+  "ci95": [
+   -0.47217956883256207,
+   0.11237332669429144
+  ],
+  "n_L": 10,
+  "n_P": 10,
+  "p_two_sided": 0.3180681931806819,
+  "ratio_P_over_L": 1.2624978477361553
+ },
+ "n_runs": 189,
+ "punishment|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "depth_first_reaction": {
+   "ci95": [
+    0.0010505924390161517,
+    0.04013117591682382
+   ],
+   "mean": 0.01891091639273872,
+   "n": 10
+  },
+  "depth_spec": {
+   "ci95": [
+    0.03515245126063664,
+    0.1972647648895982
+   ],
+   "mean": 0.11091091639273873,
+   "n": 10
+  },
+  "frac_below_br_then_recover": 0.2,
+  "runs": [
+   {
+    "depth_first_reaction": -0.0363510111242249,
+    "depth_spec": 0.28364898887577517,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s112349",
+    "went_below_br": true
+   },
+   {
+    "depth_first_reaction": 0.005820142737302358,
+    "depth_spec": 0.005820142737302358,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s181566",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.022240446760861232,
+    "depth_spec": 0.022240446760861232,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s249344",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.022240446760861232,
+    "depth_spec": 0.022240446760861232,
+    "recovered": true,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s374909",
+    "went_below_br": true
+   },
+   {
+    "depth_first_reaction": 0.025820142737302376,
+    "depth_spec": 0.025820142737302376,
+    "recovered": true,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s387061",
+    "went_below_br": true
+   },
+   {
+    "depth_first_reaction": 0.012240446760861223,
+    "depth_spec": 0.012240446760861223,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s4375",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.005820142737302358,
+    "depth_spec": 0.005820142737302358,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s589058",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.023723314481703728,
+    "depth_spec": 0.1037233144817038,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s594503",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.009929380660232745,
+    "depth_spec": 0.26992938066023275,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s706744",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.09762571141518483,
+    "depth_spec": 0.35762571141518484,
+    "recovered": false,
+    "run": "s1-gpt61sol_D_E1_gpt-61-sol_s745989",
+    "went_below_br": false
+   }
+  ]
+ },
+ "punishment|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "depth_first_reaction": {
+   "ci95": [
+    0.07972012354890443,
+    0.17529772288353787
+   ],
+   "mean": 0.11923824161204177,
+   "n": 10
+  },
+  "depth_spec": {
+   "ci95": [
+    0.11100565698008406,
+    0.22520806064389395
+   ],
+   "mean": 0.16323824161204176,
+   "n": 10
+  },
+  "frac_below_br_then_recover": 0.0,
+  "runs": [
+   {
+    "depth_first_reaction": 0.06560849289968251,
+    "depth_spec": 0.09560849289968254,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s169747",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.07936230717934456,
+    "depth_spec": 0.07936230717934456,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s247618",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.10755321657861705,
+    "depth_spec": 0.30755321657861723,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s329267",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.08478070230657986,
+    "depth_spec": 0.18478070230657972,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s338669",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.046147898499202755,
+    "depth_spec": 0.1361478984992026,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s415799",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.11183377730400035,
+    "depth_spec": 0.11183377730400035,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s429534",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.3492296973853626,
+    "depth_spec": 0.3492296973853626,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s530600",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.08478070230657986,
+    "depth_spec": 0.18478070230657972,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s582369",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.1593623071793444,
+    "depth_spec": 0.07936230717934456,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s693768",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.1037233144817038,
+    "depth_spec": 0.1037233144817038,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s800295",
+    "went_below_br": false
+   }
+  ]
+ }
+}

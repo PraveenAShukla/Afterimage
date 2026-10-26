@@ -1,0 +1,123 @@
+{
+ "benchmarks": {
+  "pM": 1.924980919957175,
+  "pN": 1.4729266600311348,
+  "param_a": 2.0,
+  "param_a0": 0.0,
+  "param_c": 1.0,
+  "param_mu": 0.25,
+  "piM": 0.3374904595088809,
+  "piN": 0.22292666003083797
+ },
+ "groups": {
+  "Dfrozen|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "Dplacebo|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "D|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "L|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "P|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": 10
+ },
+ "incomplete_runs": [],
+ "interaction|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "I": -0.16429159703636853,
+  "ci95": [
+   -0.46855537503410677,
+   0.11497664143623747
+  ],
+  "n_L": 10,
+  "n_P": 10,
+  "p_two_sided": 0.3144685531446855,
+  "ratio_P_over_L": 1.2624978477361553
+ },
+ "n_runs": 50,
+ "punishment|s1-sonnet55|E1|claude-sonnet-5-5|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "depth_first_reaction": {
+   "ci95": [
+    0.08046678749550659,
+    0.17678036131667754
+   ],
+   "mean": 0.11923824161204177,
+   "n": 10
+  },
+  "depth_spec": {
+   "ci95": [
+    0.11182301566916754,
+    0.22196411460011176
+   ],
+   "mean": 0.16323824161204176,
+   "n": 10
+  },
+  "frac_below_br_then_recover": 0.0,
+  "runs": [
+   {
+    "depth_first_reaction": 0.06560849289968251,
+    "depth_spec": 0.09560849289968254,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s169747",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.07936230717934456,
+    "depth_spec": 0.07936230717934456,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s247618",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.10755321657861705,
+    "depth_spec": 0.30755321657861723,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s329267",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.08478070230657986,
+    "depth_spec": 0.18478070230657972,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s338669",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.046147898499202755,
+    "depth_spec": 0.1361478984992026,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s415799",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.11183377730400035,
+    "depth_spec": 0.11183377730400035,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s429534",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.3492296973853626,
+    "depth_spec": 0.3492296973853626,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s530600",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.08478070230657986,
+    "depth_spec": 0.18478070230657972,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s582369",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.1593623071793444,
+    "depth_spec": 0.07936230717934456,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s693768",
+    "went_below_br": false
+   },
+   {
+    "depth_first_reaction": 0.1037233144817038,
+    "depth_spec": 0.1037233144817038,
+    "recovered": false,
+    "run": "s1-sonnet55_D_E1_claude-sonnet-5-5_s800295",
+    "went_below_br": false
+   }
+  ]
+ }
+}

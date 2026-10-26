@@ -1,0 +1,71 @@
+stage: sup2-qwen25
+arm: O
+phase: conf
+prompt: E1
+rounds: 170
+window: 150
+opening:
+- 1.95
+- 1.95
+opening_source:
+  template: s3-qwen25_14b_L_E1_Qwen25-14B-Instruct-AWQ_s{seed}
+  pool:
+  - 82744
+  - 111393
+  - 535118
+  - 922154
+  - 579886
+  - 413469
+  - 671717
+  - 290586
+  - 122234
+  - 76517
+  - 356669
+  - 708251
+  - 615854
+  - 237948
+  - 786427
+  - 754805
+  - 29283
+  - 665067
+  perm_seed: 4102
+  cross_model: true
+seeds:
+- 1121079
+- 1146099
+- 1171251
+- 1177949
+- 1186511
+- 1196401
+- 1201633
+- 1238798
+- 1242422
+- 1256217
+- 1260073
+- 1260448
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1: &id001
+  provider: vllm
+  model: Qwen/Qwen2.5-14B-Instruct-AWQ
+firm2: *id001
+supervision:
+  frame: shared
+  agent: false
+  mode: yoked
+  yoke:
+    1121079: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w356669_s1146587
+    1146099: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w413469_s1275326
+    1171251: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w29283_s1122546
+    1177949: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w665067_s1153722
+    1186511: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w786427_s1289061
+    1196401: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w122234_s1145267
+    1201633: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w708251_s1262647
+    1238798: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w237948_s1200622
+    1242422: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w111393_s1235297
+    1256217: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w76517_s1292844
+    1260073: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w579886_s1126971
+    1260448: sup2-qwen25_O_E1_Qwen25-14B-Instruct-AWQ_conf_x1.950-1.950_supSR_w754805_s1282652

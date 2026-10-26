@@ -1,0 +1,144 @@
+{
+ "A_early": {
+  "A": -0.12832291666666668,
+  "ci90_cluster": [
+   -0.3320627604166668,
+   0.06284062500000008
+  ],
+  "ci90_within": [
+   -0.3962145833333333,
+   0.15718619791666674
+  ],
+  "ci95_cluster": [
+   -0.3755231770833333,
+   0.09716028645833323
+  ],
+  "ci95_within": [
+   -0.4366772135416667,
+   0.22115989583333337
+  ]
+ },
+ "A_late": {
+  "A": -0.11802812499999998,
+  "ci90_cluster": [
+   -0.2119404687499999,
+   -0.03533005208333336
+  ],
+  "ci90_within": [
+   -0.21372479166666666,
+   -0.03203473958333346
+  ],
+  "ci95_cluster": [
+   -0.22911778645833336,
+   -0.02016953125000014
+  ],
+  "ci95_within": [
+   -0.231427265625,
+   -0.01975078124999999
+  ]
+ },
+ "card": "olmo-2-13b",
+ "cold_start": {
+  "delta_mean": -1.8513726559700638,
+  "late_121_170_per_seed": [
+   1.0277,
+   1.0197,
+   1.0435,
+   1.0133,
+   1.0257,
+   1.0228,
+   1.0212,
+   1.0083,
+   1.0167,
+   1.0208,
+   1.0228,
+   1.0222
+  ],
+  "mean": 1.0220679166666666,
+  "n": 12,
+  "price_index": -0.9973553693271963,
+  "sd": 0.008570182309064768
+ },
+ "cost": {
+  "calls": 14885,
+  "runs": 48,
+  "usd": 0.0
+ },
+ "curve_EXPL": {
+  "101-120": -0.16656249999999995,
+  "121-140": -0.1405026041666666,
+  "141-170": -0.10304513888888918,
+  "41-60": -0.12832291666666668,
+  "61-80": -0.23674479166666693,
+  "81-100": -0.20671354166666675
+ },
+ "depth": {
+  "D_0.2": "0 rounds after the planted rows left (bin 41-50)",
+  "D_0.5": "0 rounds after the planted rows left (bin 41-50)",
+  "half_life": null,
+  "half_life_reason": "blank: X0 passed under the original rule, but the amended test specification (R 1000, both CIs, sigma tuned per h) was not run"
+ },
+ "header": {
+  "decoding": "OLMo-2-1124-13B-Instruct, T 0.7",
+  "engine": {
+   "version": "0.11.2"
+  },
+  "levels_n": {
+   "1.550": 12,
+   "1.750": 12,
+   "1.950": 12
+  },
+  "model": "allenai/OLMo-2-1124-13B-Instruct",
+  "prompt": "E1, k = 20",
+  "rival": "allenai/OLMo-2-1124-13B-Instruct",
+  "source": "committed conf runs (tag results-final)",
+  "stage": "v2O-olmo2",
+  "window_ids": 12
+ },
+ "label": "degenerate (NOT SCORED)",
+ "rule": "a gate in G0-G5 failed",
+ "scope": [
+  "Not a conduct test: no forced deviation or punishment read.",
+  "Not shown to be stable across seed and window draws (Qwen2.5's A_late moved 0.741 -> 0.557 between phases).",
+  "Defined only inside the 1.55-1.95 band.",
+  "It fades: on the long arm the gap between plants shrinks over 150 rounds.",
+  "Surviving round 41 is not the finding: the informative quantity is the per-round loss after the planted rows leave the 20-row prompt window."
+ ],
+ "validity": {
+  "G0 instrument": {
+   "note": "X0 averager/br rails and the reproduction gate",
+   "pass": true
+  },
+  "G1 completeness": {
+   "excluded_or_incomplete": 0,
+   "pass": true
+  },
+  "G2 decisions": {
+   "pass": true,
+   "worst_fallback": 0.0,
+   "worst_parse_fail": 0.0033222591362126247,
+   "worst_think_price": 0.0,
+   "worst_truncation": 0.0
+  },
+  "G3 uptake": {
+   "pass": true,
+   "round21_read_rate": 0.8611111111111112
+  },
+  "G4 near cost": {
+   "cold_share": 1.0,
+   "pass": false,
+   "worst_level_share": 1.0
+  },
+  "G5 clipping": {
+   "pass": true
+  },
+  "G6 size": {
+   "min_n_per_level": 12,
+   "pass": true
+  },
+  "G7 co-metric": {
+   "note": "rho_r not computed in v0; only splits a 'none' label",
+   "pass": null
+  }
+ }
+}

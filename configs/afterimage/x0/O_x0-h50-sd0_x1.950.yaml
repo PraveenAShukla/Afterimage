@@ -1,0 +1,70 @@
+stage: x0-h50-sd0
+arm: O
+phase: conf
+prompt: E1
+rounds: 170
+window: 150
+opening:
+- 1.95
+- 1.95
+opening_source:
+  template: s3-qwen25_14b_L_E1_Qwen25-14B-Instruct-AWQ_s{seed}
+  pool:
+  - 82744
+  - 111393
+  - 535118
+  - 922154
+  - 579886
+  - 413469
+  - 671717
+  - 290586
+  - 122234
+  - 76517
+  - 356669
+  - 708251
+  - 615854
+  - 237948
+  - 786427
+  - 754805
+  - 29283
+  - 665067
+  perm_seed: 4102
+  cross_model: true
+seeds:
+- 2033276
+- 2069744
+- 2098527
+- 2175325
+- 2205020
+- 2223681
+- 2243087
+- 2264268
+- 2391755
+- 2404764
+- 2484129
+- 2552285
+- 2685951
+- 2693483
+- 2786582
+- 2805035
+- 2828501
+- 2833260
+- 2887799
+- 2907446
+- 2917775
+- 2950351
+- 2983911
+- 2984563
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 24
+firm1:
+  provider: mock
+  model: mock
+  strategy: partial:0.986233
+firm2:
+  provider: mock
+  model: mock
+  strategy: partial:0.986233

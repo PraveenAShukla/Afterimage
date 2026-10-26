@@ -1,0 +1,25 @@
+stage: lee
+phase: rep
+cell: homog-gemini
+seeds:
+- 707779
+- 719658
+- 721031
+- 732477
+- 742141
+- 747711
+- 753541
+- 763110
+- 765919
+- 769389
+firm:
+  provider: google
+  model: gemini-3.1-flash-lite
+  extra:
+    reasoning_effort: minimal
+    max_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

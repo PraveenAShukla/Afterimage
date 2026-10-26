@@ -1,0 +1,30 @@
+stage: ait-e4L-gpt61sol
+arm: L
+phase: conf
+prompt: E1
+rounds: 170
+seeds:
+- 971022
+- 971145
+- 971172
+- 971304
+- 972100
+- 972272
+- 974307
+- 974455
+- 974754
+- 974970
+- 977137
+- 978360
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 10
+firm1: &id001
+  provider: openai
+  model: gpt-6.1-sol
+  reasoning_effort: low
+firm2: *id001
+est_output_tokens: 125
+window: 150

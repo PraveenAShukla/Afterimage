@@ -1,0 +1,22 @@
+arm: P
+firm1:
+  model: ctl-br
+  provider: mock
+  strategy: br~0.02
+parallel_games: 3
+prompt: E1
+replay_map:
+  '1601': 601
+  '1602': 602
+  '1603': 603
+rounds: 300
+sampling:
+  max_tokens: 2048
+  temperature: 0.7
+  top_p: 1.0
+seeds:
+- 1601
+- 1602
+- 1603
+source_run_template: cls-heldout-br_L_E1_ctl-br_s{seed}
+stage: cls-heldout-br

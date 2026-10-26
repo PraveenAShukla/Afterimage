@@ -1,0 +1,30 @@
+stage: lee
+phase: rep
+cell: homog-qwen
+seeds:
+- 700872
+- 717779
+- 722500
+- 728853
+- 752271
+- 765647
+- 767974
+- 784835
+- 789897
+- 793490
+firm:
+  provider: openrouter
+  model: qwen/qwen3.5-flash-02-23
+  extra:
+    reasoning:
+      enabled: false
+    max_tokens: 600
+    provider:
+      order:
+      - alibaba
+      allow_fallbacks: false
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

@@ -1,0 +1,142 @@
+{
+ "A_early": {
+  "A": 0.6227499999999996,
+  "ci90_cluster": [
+   0.4416468749999998,
+   0.7871356770833329
+  ],
+  "ci90_within": [
+   0.44050546874999963,
+   0.7976171874999992
+  ],
+  "ci95_cluster": [
+   0.4191958333333331,
+   0.8142973958333328
+  ],
+  "ci95_within": [
+   0.40295117187499974,
+   0.825381901041666
+  ]
+ },
+ "A_late": {
+  "A": 0.41439583333333346,
+  "ci90_cluster": [
+   0.23812083333333303,
+   0.5898968750000001
+  ],
+  "ci90_within": [
+   0.2297541666666666,
+   0.5965479166666668
+  ],
+  "ci95_cluster": [
+   0.2085338541666665,
+   0.6205093750000003
+  ],
+  "ci95_within": [
+   0.1900817708333332,
+   0.6265005208333337
+  ]
+ },
+ "card": "sonnet-5.5",
+ "cold_start": {
+  "delta_mean": 0.6728170351033017,
+  "late_121_170_per_seed": [
+   1.6834,
+   1.5035,
+   1.9147,
+   1.5734,
+   1.752,
+   1.7236,
+   1.6431,
+   1.8495,
+   1.655,
+   1.881,
+   1.7005,
+   1.6612
+  ],
+  "mean": 1.711741666666667,
+  "n": 12,
+  "price_index": 0.5282883666987326,
+  "sd": 0.12228787539939089
+ },
+ "cost": {
+  "calls": 14883,
+  "runs": 48,
+  "usd": 84.52824
+ },
+ "curve_EXPL": {
+  "101-120": 0.40291666666666637,
+  "121-140": 0.4110416666666664,
+  "141-170": 0.41663194444444485,
+  "41-60": 0.6227499999999996,
+  "61-80": 0.49418229166666644,
+  "81-100": 0.4449999999999998
+ },
+ "depth": {
+  "D_0.2": "> 130 rounds",
+  "D_0.5": "30 rounds after the planted rows left (bin 71-80)",
+  "half_life": null,
+  "half_life_reason": "blank: X0 passed under the original rule, but the amended test specification (R 1000, both CIs, sigma tuned per h) was not run"
+ },
+ "header": {
+  "decoding": "Claude Sonnet 5.5, T 1.0, effort low, adaptive thinking",
+  "engine": null,
+  "levels_n": {
+   "1.550": 12,
+   "1.750": 12,
+   "1.950": 12
+  },
+  "model": "claude-sonnet-5-5",
+  "prompt": "E1, k = 20",
+  "rival": "claude-sonnet-5-5",
+  "source": "D1 (tag prereg-afterimage-D1)",
+  "stage": "ait-e4-sonnet55",
+  "window_ids": 12
+ },
+ "label": "unresolved",
+ "rule": "PREREG_AFTERIMAGE label table; both CIs agree",
+ "scope": [
+  "Not a conduct test: no forced deviation or punishment read.",
+  "Not shown to be stable across seed and window draws (Qwen2.5's A_late moved 0.741 -> 0.557 between phases).",
+  "Defined only inside the 1.55-1.95 band.",
+  "It fades: on the long arm the gap between plants shrinks over 150 rounds.",
+  "Surviving round 41 is not the finding: the informative quantity is the per-round loss after the planted rows leave the 20-row prompt window."
+ ],
+ "validity": {
+  "G0 instrument": {
+   "note": "X0 averager/br rails and the reproduction gate",
+   "pass": true
+  },
+  "G1 completeness": {
+   "excluded_or_incomplete": 0,
+   "pass": true
+  },
+  "G2 decisions": {
+   "pass": true,
+   "worst_fallback": 0.0,
+   "worst_parse_fail": 0.0033222591362126247,
+   "worst_think_price": 0.0,
+   "worst_truncation": 0.0
+  },
+  "G3 uptake": {
+   "pass": true,
+   "round21_read_rate": 1.0
+  },
+  "G4 near cost": {
+   "cold_share": 0.0,
+   "pass": true,
+   "worst_level_share": 0.0
+  },
+  "G5 clipping": {
+   "pass": true
+  },
+  "G6 size": {
+   "min_n_per_level": 12,
+   "pass": true
+  },
+  "G7 co-metric": {
+   "note": "rho_r not computed in v0; only splits a 'none' label",
+   "pass": null
+  }
+ }
+}

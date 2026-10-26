@@ -1,0 +1,57 @@
+stage: sup2-qwen25
+arm: O
+phase: conf
+prompt: E1
+rounds: 170
+window: 150
+opening:
+- 1.95
+- 1.95
+opening_source:
+  template: s3-qwen25_14b_L_E1_Qwen25-14B-Instruct-AWQ_s{seed}
+  pool:
+  - 82744
+  - 111393
+  - 535118
+  - 922154
+  - 579886
+  - 413469
+  - 671717
+  - 290586
+  - 122234
+  - 76517
+  - 356669
+  - 708251
+  - 615854
+  - 237948
+  - 786427
+  - 754805
+  - 29283
+  - 665067
+  perm_seed: 4102
+  cross_model: true
+seeds:
+- 1153957
+- 1175557
+- 1185415
+- 1211170
+- 1213038
+- 1222850
+- 1234379
+- 1245466
+- 1251125
+- 1257652
+- 1280123
+- 1293125
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1: &id001
+  provider: vllm
+  model: Qwen/Qwen2.5-14B-Instruct-AWQ
+firm2: *id001
+supervision:
+  frame: shared
+  agent: false

@@ -1,0 +1,9 @@
+stage: stage2
+arm: FN
+seeds: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210]
+prompt: E1
+rounds: 300
+sampling: {temperature: 0.7, top_p: 1.0, max_tokens: 2048}
+est_output_tokens: 1200   # ASSUMPTION until Stage 0 measures it
+parallel_games: 20
+firm1: {provider: vllm, model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B}

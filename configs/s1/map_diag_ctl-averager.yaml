@@ -1,0 +1,56 @@
+stage: s1map-ctl-averager
+mode: diag
+levels:
+- 1.2
+- 1.275
+- 1.35
+- 1.425
+- 1.5
+- 1.575
+- 1.65
+- 1.725
+- 1.8
+- 1.875
+- 1.95
+- 2.025
+- 2.1
+- 2.175
+- 2.25
+- 2.325
+- 2.4
+samples: 5
+seed_base: 840001
+prompt: E1
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+firm1:
+  provider: mock
+  model: control-averager
+  strategy: averager
+opening_source:
+  template: s3-qwen3_14b_off_L_E1_Qwen3-14B-AWQ_s{seed}
+  pool:
+  - 336432
+  - 253674
+  - 867157
+  - 163673
+  - 630375
+  - 536445
+  - 29284
+  - 499513
+  - 929615
+  - 258380
+  - 821813
+  - 901192
+  - 469751
+  - 650927
+  - 784775
+  - 127768
+  - 344079
+  - 947649
+  - 851381
+  - 831347
+  perm_seed: 230101
+  cross_model: true

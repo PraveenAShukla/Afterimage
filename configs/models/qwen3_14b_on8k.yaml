@@ -1,0 +1,23 @@
+name: qwen3_14b_on8k
+firm:
+  provider: vllm
+  model: Qwen/Qwen3-14B-AWQ
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: true
+revision:
+server_args: --quantization awq_marlin
+maxlen: 12288
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 8192
+battery: full
+seed_master: 31408
+parallel_games: 10
+n:
+  stage1: 10
+  stage2: 10
+  stage3: 20
+notes: 'Qwen3-14B thinking ON at 8192 tokens [deviation]: at 4096, 8/10 Stage-1 runs
+  aborted on truncation.'

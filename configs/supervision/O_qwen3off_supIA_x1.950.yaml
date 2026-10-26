@@ -1,0 +1,60 @@
+stage: sup-qwen3off
+arm: O
+phase: conf
+prompt: E1
+rounds: 170
+window: 150
+opening:
+- 1.95
+- 1.95
+opening_source:
+  template: s3-qwen25_14b_L_E1_Qwen25-14B-Instruct-AWQ_s{seed}
+  pool:
+  - 82744
+  - 111393
+  - 535118
+  - 922154
+  - 579886
+  - 413469
+  - 671717
+  - 290586
+  - 122234
+  - 76517
+  - 356669
+  - 708251
+  - 615854
+  - 237948
+  - 786427
+  - 754805
+  - 29283
+  - 665067
+  perm_seed: 4102
+  cross_model: true
+seeds:
+- 971753
+- 973192
+- 974253
+- 976279
+- 976447
+- 977193
+- 977579
+- 980248
+- 984429
+- 985041
+- 986607
+- 987746
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1: &id001
+  provider: vllm
+  model: Qwen/Qwen3-14B-AWQ
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+firm2: *id001
+supervision:
+  frame: individual
+  agent: true

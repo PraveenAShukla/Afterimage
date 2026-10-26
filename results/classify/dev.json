@@ -1,0 +1,116 @@
+{
+ "accuracy": 1.0,
+ "metrics": {
+  "averager": {
+   "I_price": 0.0,
+   "below_br202": 0.0,
+   "beta_band": 0.9999999999999999,
+   "fish_lag": 0.418300653594771,
+   "fn_gap": 0.0005733399688652163,
+   "level_vs_nash": 0.2757400066355318,
+   "n_material_moved": 3,
+   "predicted": "matcher",
+   "returns": 0.0,
+   "rho_r": 0.9988921809840174,
+   "true": "matcher"
+  },
+  "br": {
+   "I_price": 0.0,
+   "below_br202": 0.0,
+   "beta_band": 0.0,
+   "fish_lag": 0.40635753666383384,
+   "fn_gap": 7.333996886527139e-05,
+   "level_vs_nash": 7.333996886527139e-05,
+   "n_material_moved": 0,
+   "predicted": "best-responder",
+   "returns": null,
+   "rho_r": 0.41750158259859393,
+   "true": "best-responder"
+  },
+  "focal1.80": {
+   "I_price": 0.0,
+   "below_br202": 0.0,
+   "beta_band": 0.0,
+   "fish_lag": 0.4331550802139034,
+   "fn_gap": 0.32707333996886523,
+   "level_vs_nash": 0.327073339968865,
+   "n_material_moved": 0,
+   "predicted": "target-seeker",
+   "returns": null,
+   "rho_r": 0.0,
+   "true": "target-seeker"
+  },
+  "grim1.80": {
+   "I_price": 0.0,
+   "below_br202": 1.0,
+   "beta_band": 0.8177500000000008,
+   "fish_lag": 0.4331550802139034,
+   "fn_gap": 2.66600311347176e-05,
+   "level_vs_nash": 0.1090066733021986,
+   "n_material_moved": 3,
+   "predicted": "threshold",
+   "returns": 0.0,
+   "rho_r": 0.7226004868530114,
+   "true": "threshold"
+  },
+  "hillclimb": {
+   "I_price": 0.12133333333333352,
+   "below_br202": 0.0,
+   "beta_band": -0.0006666666666671485,
+   "fish_lag": 0.3336860208716442,
+   "fn_gap": 0.01691706640124541,
+   "level_vs_nash": 0.4508288955244204,
+   "n_material_moved": 3,
+   "predicted": "target-seeker",
+   "returns": 0.0,
+   "rho_r": 0.4230400250605305,
+   "true": "target-seeker"
+  },
+  "noisybr": {
+   "I_price": -0.0019733333333331604,
+   "below_br202": 0.3333333333333333,
+   "beta_band": 0.0,
+   "fish_lag": 0.40701140592651464,
+   "fn_gap": 0.023212756528766892,
+   "level_vs_nash": -0.0045129933644680875,
+   "n_material_moved": 1,
+   "predicted": "best-responder",
+   "returns": 0.0,
+   "rho_r": 0.4175974674071699,
+   "true": "best-responder"
+  },
+  "partial0.5": {
+   "I_price": 0.0,
+   "below_br202": 0.0,
+   "beta_band": 0.0,
+   "fish_lag": 0.4064091833555471,
+   "fn_gap": 7.333996886527139e-05,
+   "level_vs_nash": 0.0005733399688652163,
+   "n_material_moved": 0,
+   "predicted": "partial matcher",
+   "returns": null,
+   "rho_r": 0.4999999999999999,
+   "true": "partial matcher"
+  },
+  "tft": {
+   "I_price": 0.0,
+   "below_br202": 0.0,
+   "beta_band": 1.0000000000000009,
+   "fish_lag": 0.418300653594771,
+   "fn_gap": 7.333996886527139e-05,
+   "level_vs_nash": 0.2760733399688651,
+   "n_material_moved": 3,
+   "predicted": "matcher",
+   "returns": 0.0,
+   "rho_r": 1.0,
+   "true": "matcher"
+  }
+ },
+ "thresholds": {
+  "beta_cut": 0.2,
+  "flat_rho": 0.20877476250144095,
+  "level_cut": 0.2243045344133095,
+  "matcher_rho": 0.86102328867251,
+  "partial_rho": 0.4587747625014409
+ }
+}

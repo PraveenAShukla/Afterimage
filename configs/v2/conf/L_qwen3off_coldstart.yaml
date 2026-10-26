@@ -1,0 +1,30 @@
+stage: v2L-qwen3off
+arm: L
+phase: conf
+prompt: E1
+rounds: 170
+seeds:
+- 930742
+- 931160
+- 931270
+- 931289
+- 931536
+- 933395
+- 934693
+- 935669
+- 936279
+- 938364
+- 939415
+- 939490
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1: &id001
+  provider: vllm
+  model: Qwen/Qwen3-14B-AWQ
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+firm2: *id001

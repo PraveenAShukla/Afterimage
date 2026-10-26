@@ -1,0 +1,32 @@
+stage: v2Qanchor-qwen3off
+arm: Q
+phase: conf
+prompt: E1
+rounds: 100
+fixed_price: 1.473
+view:
+  anchor: 2.1
+seeds:
+- 930284
+- 931105
+- 931585
+- 931854
+- 932198
+- 932274
+- 933388
+- 933614
+- 938892
+- 938916
+- 938920
+- 939852
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1:
+  provider: vllm
+  model: Qwen/Qwen3-14B-AWQ
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false

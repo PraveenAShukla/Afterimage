@@ -1,0 +1,29 @@
+{
+ "benchmarks": {
+  "pM": 1.924980919957175,
+  "pN": 1.4729266600311348,
+  "param_a": 2.0,
+  "param_a0": 0.0,
+  "param_c": 1.0,
+  "param_mu": 0.25,
+  "piM": 0.3374904595088809,
+  "piN": 0.22292666003083797
+ },
+ "groups": {
+  "L|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10,
+  "P|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": 10
+ },
+ "incomplete_runs": [],
+ "interaction|s1-gpt61sol|E1|gpt-6.1-sol|id:none|T1.0|p1.0|max2048|mkt:{}": {
+  "I": -0.04660910631259524,
+  "ci95": [
+   -0.3307410239918489,
+   0.22578705453339654
+  ],
+  "n_L": 10,
+  "n_P": 10,
+  "p_two_sided": 0.7565243475652434,
+  "ratio_P_over_L": 1.1527131601073985
+ },
+ "n_runs": 20
+}

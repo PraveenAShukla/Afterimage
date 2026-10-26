@@ -1,0 +1,21 @@
+name: sonnet55_confirm
+firm:
+  provider: anthropic
+  model: claude-sonnet-5-5
+  effort: low
+  thinking: adaptive
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+battery: headline
+est_output_tokens: 1100
+approve_usd: 44
+seed_master: 55777
+parallel_games: 5
+n:
+  stage1: 8
+  stage2: 8
+  stage3: 8
+notes: Pre-registered confirmation of the price-based interaction (docs/PREDICTIONS.md);
+  identical settings to sonnet55

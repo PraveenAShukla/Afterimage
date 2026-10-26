@@ -1,0 +1,74 @@
+stage: sup2-qwen3off
+arm: O
+phase: conf
+prompt: E1
+rounds: 170
+window: 150
+opening:
+- 1.55
+- 1.55
+opening_source:
+  template: s3-qwen25_14b_L_E1_Qwen25-14B-Instruct-AWQ_s{seed}
+  pool:
+  - 82744
+  - 111393
+  - 535118
+  - 922154
+  - 579886
+  - 413469
+  - 671717
+  - 290586
+  - 122234
+  - 76517
+  - 356669
+  - 708251
+  - 615854
+  - 237948
+  - 786427
+  - 754805
+  - 29283
+  - 665067
+  perm_seed: 4102
+  cross_model: true
+seeds:
+- 1101138
+- 1110201
+- 1136992
+- 1144765
+- 1160476
+- 1162004
+- 1220469
+- 1222893
+- 1250329
+- 1257514
+- 1266780
+- 1293395
+sampling:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 12
+firm1: &id001
+  provider: vllm
+  model: Qwen/Qwen3-14B-AWQ
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+firm2: *id001
+supervision:
+  frame: shared
+  agent: false
+  mode: yoked
+  yoke:
+    1101138: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w754805_s1264396
+    1110201: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w579886_s1121233
+    1136992: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w237948_s1226623
+    1144765: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w665067_s1182197
+    1160476: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w786427_s1270464
+    1162004: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w356669_s1174480
+    1220469: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w708251_s1234076
+    1222893: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w111393_s1226878
+    1250329: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w413469_s1255822
+    1257514: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w29283_s1111724
+    1266780: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w122234_s1146481
+    1293395: sup2-qwen3off_O_E1_Qwen3-14B-AWQ_conf_x1.550-1.550_supSR_w76517_s1275631

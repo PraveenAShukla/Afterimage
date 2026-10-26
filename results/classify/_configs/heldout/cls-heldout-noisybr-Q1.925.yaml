@@ -1,0 +1,19 @@
+arm: Q
+firm1:
+  model: ctl-noisybr
+  provider: mock
+  strategy: noisybr:0.03~0.02
+fixed_price: 1.925
+parallel_games: 3
+phase: disc
+prompt: E1
+rounds: 100
+sampling:
+  max_tokens: 2048
+  temperature: 0.7
+  top_p: 1.0
+seeds:
+- 601
+- 602
+- 603
+stage: cls-heldout-noisybr

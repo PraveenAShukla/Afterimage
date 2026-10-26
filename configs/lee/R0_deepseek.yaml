@@ -1,0 +1,26 @@
+stage: lee
+phase: rep
+cell: homog-deepseek
+seeds:
+- 704644
+- 717717
+- 721423
+- 726173
+- 737925
+- 747387
+- 748478
+- 760435
+- 776848
+- 784115
+firm:
+  provider: deepseek
+  model: deepseek-flash
+  extra:
+    thinking:
+      type: disabled
+    max_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

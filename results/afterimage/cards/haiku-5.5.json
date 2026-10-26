@@ -1,0 +1,142 @@
+{
+ "A_early": {
+  "A": 0.19270833333333318,
+  "ci90_cluster": [
+   0.06963151041666643,
+   0.32915104166666626
+  ],
+  "ci90_within": [
+   0.063134114583333,
+   0.33000260416666655
+  ],
+  "ci95_cluster": [
+   0.048305989583333125,
+   0.3562252604166663
+  ],
+  "ci95_within": [
+   0.04015494791666652,
+   0.3569570312499999
+  ]
+ },
+ "A_late": {
+  "A": -0.006300000000000245,
+  "ci90_cluster": [
+   -0.03423750000000013,
+   0.025088333333333084
+  ],
+  "ci90_within": [
+   -0.04144010416666692,
+   0.03520739583333291
+  ],
+  "ci95_cluster": [
+   -0.038881927083333906,
+   0.031262656249999736
+  ],
+  "ci95_within": [
+   -0.04715515625000028,
+   0.04358130208333343
+  ]
+ },
+ "card": "haiku-5.5",
+ "cold_start": {
+  "delta_mean": 0.03364519192012154,
+  "late_121_170_per_seed": [
+   1.486,
+   1.4984,
+   1.4714,
+   1.4966,
+   1.4713,
+   1.4711,
+   1.5007,
+   1.4794,
+   1.4812,
+   1.4805,
+   1.4712,
+   1.48
+  ],
+  "mean": 1.4823241666666667,
+  "n": 12,
+  "price_index": 0.0207884483536763,
+  "sd": 0.010962313506931066
+ },
+ "cost": {
+  "calls": 14969,
+  "runs": 48,
+  "usd": 9.028714599999999
+ },
+ "curve_EXPL": {
+  "101-120": -0.014989583333333419,
+  "121-140": 0.009239583333333266,
+  "141-170": -0.016659722222221594,
+  "41-60": 0.19270833333333318,
+  "61-80": 0.010359375000000145,
+  "81-100": -0.009776041666666834
+ },
+ "depth": {
+  "D_0.2": "10 rounds after the planted rows left (bin 51-60)",
+  "D_0.5": "0 rounds after the planted rows left (bin 41-50)",
+  "half_life": null,
+  "half_life_reason": "blank: X0 passed under the original rule, but the amended test specification (R 1000, both CIs, sigma tuned per h) was not run"
+ },
+ "header": {
+  "decoding": "Claude Haiku 5.5, T 1.0, effort low, adaptive thinking",
+  "engine": null,
+  "levels_n": {
+   "1.550": 12,
+   "1.750": 12,
+   "1.950": 12
+  },
+  "model": "claude-haiku-5-5",
+  "prompt": "E1, k = 20",
+  "rival": "claude-haiku-5-5",
+  "source": "D1 (tag prereg-afterimage-D1)",
+  "stage": "ait-e4-haiku55",
+  "window_ids": 12
+ },
+ "label": "unresolved",
+ "rule": "PREREG_AFTERIMAGE label table; both CIs agree",
+ "scope": [
+  "Not a conduct test: no forced deviation or punishment read.",
+  "Not shown to be stable across seed and window draws (Qwen2.5's A_late moved 0.741 -> 0.557 between phases).",
+  "Defined only inside the 1.55-1.95 band.",
+  "It fades: on the long arm the gap between plants shrinks over 150 rounds.",
+  "Surviving round 41 is not the finding: the informative quantity is the per-round loss after the planted rows leave the 20-row prompt window."
+ ],
+ "validity": {
+  "G0 instrument": {
+   "note": "X0 averager/br rails and the reproduction gate",
+   "pass": true
+  },
+  "G1 completeness": {
+   "excluded_or_incomplete": 0,
+   "pass": true
+  },
+  "G2 decisions": {
+   "pass": true,
+   "worst_fallback": 0.0033333333333333335,
+   "worst_parse_fail": 0.02287581699346405,
+   "worst_think_price": 0.0,
+   "worst_truncation": 0.02287581699346405
+  },
+  "G3 uptake": {
+   "pass": true,
+   "round21_read_rate": 1.0
+  },
+  "G4 near cost": {
+   "cold_share": 0.0,
+   "pass": true,
+   "worst_level_share": 0.0
+  },
+  "G5 clipping": {
+   "pass": true
+  },
+  "G6 size": {
+   "min_n_per_level": 12,
+   "pass": true
+  },
+  "G7 co-metric": {
+   "note": "rho_r not computed in v0; only splits a 'none' label",
+   "pass": null
+  }
+ }
+}

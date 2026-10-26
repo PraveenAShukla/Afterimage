@@ -1,0 +1,31 @@
+stage: ait-e4L-haiku55
+arm: L
+phase: conf
+prompt: E1
+rounds: 170
+seeds:
+- 970582
+- 972756
+- 972872
+- 973097
+- 973896
+- 974451
+- 975764
+- 975803
+- 976364
+- 976506
+- 977668
+- 978605
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 10
+firm1: &id001
+  provider: anthropic
+  model: claude-haiku-5-5
+  effort: low
+  thinking: adaptive
+firm2: *id001
+est_output_tokens: 1000
+window: 150

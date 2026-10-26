@@ -1,0 +1,42 @@
+stage: s3x-haiku55-gpt6luna
+arm: X
+prompt: E1
+rounds: 300
+seeds:
+- 77001
+- 77002
+- 77003
+- 77004
+- 77005
+- 77006
+- 77007
+- 77008
+- 77009
+- 77010
+- 77011
+- 77012
+- 77013
+- 77014
+- 77015
+- 77016
+- 77017
+- 77018
+- 77019
+- 77020
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+est_output_tokens: 600
+parallel_games: 10
+firm1:
+  provider: anthropic
+  model: claude-haiku-5-5
+  effort: low
+  thinking: adaptive
+firm2:
+  provider: openai
+  model: gpt-6-luna
+  reasoning_effort: none
+notes: 'Cross-lab X arm: Claude Haiku 5.5 (firm 1) vs gpt-6-luna (firm 2), price-matched
+  pair, T=1 (P8)'

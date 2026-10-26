@@ -1,0 +1,23 @@
+stage: pilot
+arm: L
+prompt: E1
+rounds: 10
+seeds:
+- 1
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+est_output_tokens: 1100
+parallel_games: 1
+firm1:
+  provider: anthropic
+  model: claude-sonnet-5-5
+  effort: low
+  thinking: adaptive
+firm2:
+  provider: anthropic
+  model: claude-sonnet-5-5
+  effort: low
+  thinking: adaptive
+notes: Sonnet 5.5 cost mini-pilot before its headline battery

@@ -1,0 +1,24 @@
+stage: lee
+phase: rep
+cell: homog-claude
+seeds:
+- 701479
+- 709124
+- 720892
+- 721047
+- 722043
+- 725512
+- 733764
+- 740692
+- 751548
+- 788814
+firm:
+  provider: anthropic
+  model: claude-haiku-4-5
+  extra:
+    max_tokens: 600
+n: 4
+rounds: 200
+max_output_tokens: 600
+est_output_tokens: 120
+parallel_games: 5

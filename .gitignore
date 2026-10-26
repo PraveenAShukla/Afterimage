@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+runs/
+results/cache/
+.claude/
+*.egg-info/
+serve/site.env
+results/preflight/
+internal/
+runs_cluster/
+runs_lee/
+runs_afterimage*/
+runs_ait*/
+out/

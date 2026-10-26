@@ -1,0 +1,56 @@
+stage: ait-e4-gpt61sol
+arm: O
+phase: conf
+prompt: E1
+rounds: 170
+window: 150
+opening:
+- 1.75
+- 1.75
+opening_source:
+  template: s3-qwen25_14b_L_E1_Qwen25-14B-Instruct-AWQ_s{seed}
+  pool:
+  - 82744
+  - 111393
+  - 535118
+  - 922154
+  - 579886
+  - 413469
+  - 671717
+  - 290586
+  - 122234
+  - 76517
+  - 356669
+  - 708251
+  - 615854
+  - 237948
+  - 786427
+  - 754805
+  - 29283
+  - 665067
+  perm_seed: 4102
+  cross_model: true
+seeds:
+- 970159
+- 970389
+- 970681
+- 970856
+- 971164
+- 971517
+- 972374
+- 974271
+- 975833
+- 976493
+- 977752
+- 978389
+sampling:
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 2048
+parallel_games: 10
+firm1: &id001
+  provider: openai
+  model: gpt-6.1-sol
+  reasoning_effort: low
+firm2: *id001
+est_output_tokens: 125

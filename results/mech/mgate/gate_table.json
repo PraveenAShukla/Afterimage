@@ -1,0 +1,232 @@
+{
+ "misses": [
+  "STEP cutmatch",
+  "STEP winstay",
+  "STEP satisfice",
+  "STEP raisematch"
+ ],
+ "rows": [
+  {
+   "A": 1.4988010832439614e-16,
+   "arm": "STEP",
+   "hand": [
+    1,
+    1,
+    "symmetric, matcher-like"
+   ],
+   "label": "symmetric, matcher-like",
+   "pass": true,
+   "policy": "match",
+   "rho_down": 0.9999999999999998,
+   "rho_up": 1.0
+  },
+  {
+   "H_down": 0.49970833333333314,
+   "H_up": 0.5010708333333332,
+   "arm": "IMP",
+   "hand": [
+    1,
+    1,
+    0.5,
+    0.5
+   ],
+   "label": "two-way persistence",
+   "pass": true,
+   "pi_down": 1.0000000000000007,
+   "pi_up": 0.9996666666666671,
+   "policy": "match"
+  },
+  {
+   "A": -2.083333333477988e-05,
+   "arm": "STEP",
+   "hand": [
+    1,
+    1,
+    "symmetric, matcher-like"
+   ],
+   "label": "symmetric, matcher-like",
+   "pass": true,
+   "policy": "averager",
+   "rho_down": 1.0000041666666657,
+   "rho_up": 1.0000250000000006
+  },
+  {
+   "H_down": 0.49988333333333357,
+   "H_up": 0.49992083333333304,
+   "arm": "IMP",
+   "hand": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "label": "two-way persistence",
+   "pass": true,
+   "pi_down": 0.4998333333333336,
+   "pi_up": 0.5000000000000004,
+   "policy": "averager"
+  },
+  {
+   "A": 0.8166833333333331,
+   "arm": "STEP",
+   "hand": [
+    0,
+    1,
+    "ratchet, matching"
+   ],
+   "label": "ratchet, matching",
+   "pass": false,
+   "policy": "cutmatch",
+   "rho_down": 0.9529416666666665,
+   "rho_up": 0.13625833333333331
+  },
+  {
+   "H_down": 0.9716916666666668,
+   "H_up": 0.01213333333333333,
+   "arm": "IMP",
+   "hand": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "label": "one-way hysteresis",
+   "pass": true,
+   "pi_down": 0.9743333333333337,
+   "pi_up": 0.010333333333333238,
+   "policy": "cutmatch"
+  },
+  {
+   "A": 0.0015916666666664415,
+   "arm": "STEP",
+   "hand": [
+    0,
+    1,
+    "ratchet, matching"
+   ],
+   "label": "symmetric, matcher-like",
+   "pass": false,
+   "policy": "winstay",
+   "rho_down": 1.0005333333333333,
+   "rho_up": 0.9989416666666668
+  },
+  {
+   "H_down": 0.9667416666666663,
+   "H_up": 0.03257916666666683,
+   "arm": "IMP",
+   "hand": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "label": "one-way hysteresis",
+   "pass": true,
+   "pi_down": 0.9800000000000002,
+   "pi_up": 0.010000000000000089,
+   "policy": "winstay"
+  },
+  {
+   "A": 0.09391833333333321,
+   "arm": "STEP",
+   "hand": [
+    0,
+    1.29,
+    "ratchet, BR-landing"
+   ],
+   "label": "symmetric, BR-like",
+   "pass": false,
+   "policy": "satisfice",
+   "rho_down": 0.6257699999999999,
+   "rho_up": 0.5318516666666668
+  },
+  {
+   "A": -0.7129166666666656,
+   "arm": "STEP",
+   "hand": [
+    1,
+    0,
+    "reverse"
+   ],
+   "label": "reverse",
+   "pass": false,
+   "policy": "raisematch",
+   "rho_down": 0.2744000000000005,
+   "rho_up": 0.9873166666666661
+  },
+  {
+   "H_down": 0.0066833333333335965,
+   "H_up": 0.974816666666667,
+   "arm": "IMP",
+   "hand": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "label": "inconclusive",
+   "pass": true,
+   "pi_down": 0.008333333333333236,
+   "pi_up": 0.973000000000001,
+   "policy": "raisematch"
+  },
+  {
+   "A": 0.02172333333333324,
+   "arm": "STEP",
+   "hand": [
+    0.41,
+    0.44,
+    "symmetric, BR-like"
+   ],
+   "label": "symmetric, BR-like",
+   "pass": true,
+   "policy": "br",
+   "rho_down": 0.4364666666666664,
+   "rho_up": 0.41474333333333313
+  },
+  {
+   "H_down": 0.0,
+   "H_up": 0.0,
+   "arm": "IMP",
+   "hand": [
+    0.43,
+    0.43,
+    0,
+    0
+   ],
+   "label": "transient",
+   "pass": true,
+   "pi_down": 0.39770000000000005,
+   "pi_up": 0.43220000000000053,
+   "policy": "br"
+  },
+  {
+   "A": -2.1804741666666674,
+   "arm": "STEP",
+   "hand": [
+    2.18,
+    0,
+    "reverse"
+   ],
+   "label": "reverse",
+   "pass": true,
+   "policy": "grim",
+   "rho_down": 0.0,
+   "rho_up": 2.1804741666666674
+  },
+  {
+   "A": 0.023766666666666717,
+   "arm": "STEP",
+   "hand": [
+    0.4,
+    0.4,
+    "symmetric, BR-like"
+   ],
+   "label": "symmetric, BR-like",
+   "pass": true,
+   "policy": "hillclimb",
+   "rho_down": 0.43888333333333335,
+   "rho_up": 0.4151166666666666
+  }
+ ]
+}

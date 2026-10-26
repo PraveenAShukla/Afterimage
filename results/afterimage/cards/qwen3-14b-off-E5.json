@@ -1,0 +1,144 @@
+{
+ "A_early": {
+  "A": 0.9684257812500005,
+  "ci90_cluster": [
+   0.9386287109375003,
+   0.9949375000000005
+  ],
+  "ci90_within": [
+   0.9363812500000003,
+   0.9950289062500005
+  ],
+  "ci95_cluster": [
+   0.9323824218750004,
+   0.9994966796875008
+  ],
+  "ci95_within": [
+   0.9294246093750004,
+   0.9994767578125007
+  ]
+ },
+ "A_late": {
+  "A": 0.7863031250000003,
+  "ci90_cluster": [
+   0.6329652343750005,
+   0.8932628906250003
+  ],
+  "ci90_within": [
+   0.6222229687499998,
+   0.9046952343750005
+  ],
+  "ci95_cluster": [
+   0.6068875000000006,
+   0.9018581054687507
+  ],
+  "ci95_within": [
+   0.5843399804687506,
+   0.9173714062500006
+  ]
+ },
+ "card": "qwen3-14b-off-E5",
+ "cold_start": {
+  "delta_mean": 0.810172491896522,
+  "late_121_170_per_seed": [
+   1.9643,
+   1.8243,
+   1.5146,
+   1.8587,
+   1.8357,
+   1.5387,
+   1.8356,
+   1.8505,
+   1.6561,
+   1.8742,
+   1.9295,
+   1.9366
+  ],
+  "mean": 1.8015658333333333,
+  "n": 12,
+  "price_index": 0.7269905461259597,
+  "sd": 0.14999338266969292
+ },
+ "cost": {
+  "calls": 18490,
+  "runs": 60,
+  "usd": 0.0
+ },
+ "curve_EXPL": {
+  "101-120": 0.8232304687500008,
+  "121-140": 0.8126328125000004,
+  "141-170": 0.7687500000000003,
+  "41-60": 0.9684257812500005,
+  "61-80": 0.8720625000000005,
+  "81-100": 0.8242070312500003
+ },
+ "depth": {
+  "D_0.2": "> 130 rounds",
+  "D_0.5": "> 130 rounds",
+  "half_life": null,
+  "half_life_reason": "blank: X0 passed under the original rule, but the amended test specification (R 1000, both CIs, sigma tuned per h) was not run"
+ },
+ "header": {
+  "decoding": "Qwen3-14B-AWQ, thinking off, T 0.7 (E5 fresh seeds)",
+  "engine": {
+   "version": "0.11.2"
+  },
+  "levels_n": {
+   "1.550": 16,
+   "1.750": 16,
+   "1.950": 16
+  },
+  "model": "Qwen/Qwen3-14B-AWQ",
+  "prompt": "E1, k = 20",
+  "rival": "Qwen/Qwen3-14B-AWQ",
+  "source": "D1 (tag prereg-afterimage-D1)",
+  "stage": "ait-e5-full-qwen3off",
+  "window_ids": 16
+ },
+ "label": "relays",
+ "rule": "PREREG_AFTERIMAGE label table; both CIs agree",
+ "scope": [
+  "Not a conduct test: no forced deviation or punishment read.",
+  "Not shown to be stable across seed and window draws (Qwen2.5's A_late moved 0.741 -> 0.557 between phases).",
+  "Defined only inside the 1.55-1.95 band.",
+  "It fades: on the long arm the gap between plants shrinks over 150 rounds.",
+  "Surviving round 41 is not the finding: the informative quantity is the per-round loss after the planted rows leave the 20-row prompt window."
+ ],
+ "validity": {
+  "G0 instrument": {
+   "note": "X0 averager/br rails and the reproduction gate",
+   "pass": true
+  },
+  "G1 completeness": {
+   "excluded_or_incomplete": 0,
+   "pass": true
+  },
+  "G2 decisions": {
+   "pass": true,
+   "worst_fallback": 0.0,
+   "worst_parse_fail": 0.006622516556291391,
+   "worst_think_price": 0.0,
+   "worst_truncation": 0.0
+  },
+  "G3 uptake": {
+   "pass": true,
+   "round21_read_rate": 1.0
+  },
+  "G4 near cost": {
+   "cold_share": 0.0,
+   "pass": true,
+   "worst_level_share": 0.0
+  },
+  "G5 clipping": {
+   "pass": true
+  },
+  "G6 size": {
+   "min_n_per_level": 16,
+   "pass": true
+  },
+  "G7 co-metric": {
+   "note": "rho_r not computed in v0; only splits a 'none' label",
+   "pass": null
+  }
+ }
+}

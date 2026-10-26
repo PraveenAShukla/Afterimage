@@ -1,0 +1,122 @@
+{
+ "A_early": {
+  "A": 0.27027604166666674,
+  "ci90_cluster": [
+   0.1765432291666668,
+   0.35954140624999953
+  ],
+  "ci90_within": [
+   0.17649739583333354,
+   0.3628216145833334
+  ],
+  "ci95_cluster": [
+   0.15901028645833337,
+   0.37505351562499967
+  ],
+  "ci95_within": [
+   0.1570670572916667,
+   0.3786835937499998
+  ]
+ },
+ "A_late": {
+  "A": 0.014936458333333536,
+  "ci90_cluster": [
+   -0.0021803645833331194,
+   0.03231666666666694
+  ],
+  "ci90_within": [
+   -0.005287656249999436,
+   0.03768255208333333
+  ],
+  "ci95_cluster": [
+   -0.004862838541666401,
+   0.03561932291666683
+  ],
+  "ci95_within": [
+   -0.00879440104166645,
+   0.04267843750000004
+  ]
+ },
+ "card": "k2",
+ "cold_start": null,
+ "cost": {
+  "calls": 23094,
+  "runs": 72,
+  "usd": 0.0
+ },
+ "curve_EXPL": {
+  "101-120": 0.052442708333333386,
+  "121-140": 0.02929427083333348,
+  "141-170": 0.005364583333333505,
+  "41-60": 0.27027604166666674,
+  "61-80": 0.18151562500000007,
+  "81-100": 0.0931302083333335
+ },
+ "depth": {
+  "D_0.2": "30 rounds after the planted rows left (bin 71-80)",
+  "D_0.5": "0 rounds after the planted rows left (bin 41-50)",
+  "half_life": null,
+  "half_life_reason": "blank: X0 passed under the original rule, but the amended test specification (R 1000, both CIs, sigma tuned per h) was not run"
+ },
+ "header": {
+  "decoding": "IFM K2 (375B reasoning), reasoning effort low (extra model)",
+  "engine": null,
+  "levels_n": {
+   "1.550": 12,
+   "1.750": 12,
+   "1.950": 12
+  },
+  "model": "IFM/K2-Horizon-375B-A23B",
+  "prompt": "E1, k = 20",
+  "rival": "IFM/K2-Horizon-375B-A23B",
+  "source": "committed conf runs (tag results-final)",
+  "stage": "v2O-k2",
+  "window_ids": 12
+ },
+ "label": "degenerate (NOT SCORED)",
+ "rule": "a gate in G0-G5 failed",
+ "scope": [
+  "Not a conduct test: no forced deviation or punishment read.",
+  "Not shown to be stable across seed and window draws (Qwen2.5's A_late moved 0.741 -> 0.557 between phases).",
+  "Defined only inside the 1.55-1.95 band.",
+  "It fades: on the long arm the gap between plants shrinks over 150 rounds.",
+  "Surviving round 41 is not the finding: the informative quantity is the per-round loss after the planted rows leave the 20-row prompt window."
+ ],
+ "validity": {
+  "G0 instrument": {
+   "note": "X0 averager/br rails and the reproduction gate",
+   "pass": true
+  },
+  "G1 completeness": {
+   "excluded_or_incomplete": 0,
+   "pass": true
+  },
+  "G2 decisions": {
+   "pass": false,
+   "worst_fallback": 0.006666666666666667,
+   "worst_parse_fail": 0.12058823529411765,
+   "worst_think_price": 0.0,
+   "worst_truncation": 0.10294117647058823
+  },
+  "G3 uptake": {
+   "pass": true,
+   "round21_read_rate": 1.0
+  },
+  "G4 near cost": {
+   "cold_share": 0.0,
+   "pass": true,
+   "worst_level_share": 0.0
+  },
+  "G5 clipping": {
+   "pass": true
+  },
+  "G6 size": {
+   "min_n_per_level": 12,
+   "pass": true
+  },
+  "G7 co-metric": {
+   "note": "rho_r not computed in v0; only splits a 'none' label",
+   "pass": null
+  }
+ }
+}
